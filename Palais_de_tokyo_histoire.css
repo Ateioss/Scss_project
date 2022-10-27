@@ -74,6 +74,10 @@ body .block-main .block-histoire-1 .block-image .picture {
 body .block-main .block-histoire-1 .block-texte {
   width: 40%;
 }
+body .block-main .block-histoire-1 .block-texte .texte-histoire {
+  border-bottom: 2px solid black;
+  width: 30%;
+}
 body .block-main .block-histoire-2 {
   display: flex;
   flex-direction: row;
@@ -92,6 +96,10 @@ body .block-main .block-histoire-2 .block-image .picture {
 }
 body .block-main .block-histoire-2 .block-texte {
   width: 40%;
+}
+body .block-main .block-histoire-2 .block-texte .texte-histoire {
+  border-bottom: 2px solid black;
+  width: 30%;
 }
 body .block-footer {
   background-color: black;

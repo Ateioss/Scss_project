@@ -50,7 +50,6 @@ body{
             }
         }
     }
-
     
     .block-main{
         background-color: white;
@@ -76,6 +75,10 @@ body{
             }
             .block-texte{
                 width: 40%;
+                .texte-histoire{
+                    border-bottom:2px solid black;
+                    width:30%;
+                }
             }
         }
         .block-histoire-2{
@@ -91,7 +94,11 @@ body{
                 }  
             }
             .block-texte{
-                width: 40%; 
+                width: 40%;
+                .texte-histoire{
+                    border-bottom:2px solid black;
+                    width:30%;
+                } 
             }
             
         }
