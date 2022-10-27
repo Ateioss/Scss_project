@@ -44,78 +44,58 @@ body .block-menu .item-menu {
 body .block-menu .item-menu:hover {
   color: orangered;
 }
-body .block-title {
-  background-color: white;
-  grid-area: 2/1/3/4;
-  height: 80vh;
-  background-image: url(images/Copie-de-Design-sans-titre-2020-10-19T000904.662.jpg);
-  background-size: cover;
-  position: relative;
-}
-body .block-title .button-histoire {
-  position: absolute;
-  bottom: 80px;
-  right: 120px;
-  padding: 30px;
-  border-radius: 20px;
-  background-color: black;
-  color: white;
-  text-decoration: none;
-  opacity: 0.6;
-}
-body .block-title .button-histoire:hover {
-  background-color: black;
-  color: white;
-  opacity: 1;
-}
 body .block-main {
   background-color: white;
-  grid-area: 3/1/4/4;
+  grid-area: 2/1/3/4;
   height: 60vh;
   padding: 10px;
   display: flex;
-  flex-direction: row;
-}
-body .block-main .block-localisation {
-  width: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
   flex-direction: column;
+  margin-top: 20px;
+  gap: 10vh;
+  background-color: rgb(228, 229, 230);
 }
-body .block-main .block-localisation .palais-tokyo-adress {
-  margin-top: 3vh;
-  text-align: center;
-}
-body .block-main .block-localisation .palais-tokyo-social {
+body .block-main .block-histoire-1 {
   display: flex;
-  gap: 10px;
+  flex-direction: row;
   justify-content: center;
-  margin-top: 3vh;
+  gap: 1vh;
 }
-body .block-main .block-localisation .palais-tokyo-social > a img {
-  width: 30px;
-  border-radius: 50%;
-}
-body .block-main .block-localisation > h3 {
-  font-size: 1.5em;
-}
-body .block-main .block-main-map {
-  width: 60%;
+body .block-main .block-histoire-1 .block-image {
+  width: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
 }
-body .block-main .block-main-map .map {
+body .block-main .block-histoire-1 .block-image .picture {
   width: 60%;
-  height: 60%;
-  border: 0;
+}
+body .block-main .block-histoire-1 .block-texte {
+  width: 40%;
+}
+body .block-main .block-histoire-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1vh;
+}
+body .block-main .block-histoire-2 .block-image {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+body .block-main .block-histoire-2 .block-image .picture {
+  width: 70%;
+}
+body .block-main .block-histoire-2 .block-texte {
+  width: 40%;
 }
 body .block-footer {
   background-color: black;
-  grid-area: 4/1/5/4;
+  grid-area: 3/1/4/4;
   height: 20vh;
   display: flex;
   align-items: center;
@@ -148,23 +128,36 @@ body .block-footer > .footer-link > a img {
   body .block-menu {
     grid-area: 2/1/3/4;
   }
-  body .block-title {
-    grid-area: 3/1/4/4;
-  }
   body .block-main {
-    grid-area: 4/1/5/4;
+    grid-area: 3/1/4/4;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 5vh;
+    height: 100vh;
   }
-  body .block-main .block-main-map {
+  body .block-main .block-histoire-1 {
+    flex-direction: column;
+    gap: 2vh;
+  }
+  body .block-main .block-histoire-1 .block-image {
     width: 100%;
   }
-  body .block-main .block-localisation {
+  body .block-main .block-histoire-1 .block-texte {
+    width: 100%;
+  }
+  body .block-main .block-histoire-2 {
+    flex-direction: column-reverse;
+    gap: 2vh;
+  }
+  body .block-main .block-histoire-2 .block-texte {
+    width: 100%;
+  }
+  body .block-main .block-histoire-2 .block-image {
     width: 100%;
   }
   body .block-footer {
-    grid-area: 5/1/6/4;
+    grid-area: 4/1/5/4;
   }
 }
 
