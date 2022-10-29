@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="Palais_de_tokyo.css">
+    <title>Palais tokyo</title>
+    <link rel="stylesheet" href="css/Palais_de_tokyo.css">
     <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -20,6 +20,13 @@
         <a href="Palais_de_tokyo.html" class="item-menu">Accueil</a>
     </nav>
     <div class="block-title">
+        <div class="prev" onclick="carousel_prev();"></div>
+        <div class="next" onclick="carousel_next();"></div>
+        <div class="bloc-slide-inc">
+            <div id="puce-1" class="puce-orange puce-slide"></div>
+            <div id="puce-2" class="puce-blanc puce-slide"></div>
+            <div id="puce-3" class="puce-blanc puce-slide"></div>
+        </div>
         <a href="Son-histoire-palais-de-tokyo.html" class="button-histoire">Son histoire</a>
     </div>
     <main class="block-main">
@@ -46,20 +53,24 @@
     <div class="block-map"></div>
     <footer class="block-footer">
         <div>
-            <a href="" class="footer-link">Son histoire</a>
+            <a href="Son-histoire-palais-de-tokyo.html" class="footer-link">Son histoire</a>
             <span class="footer-link">|</span>
-            <a href="" class="footer-link">Ses expositions</a>
+            <a href="Ses-expositions.html" class="footer-link">Ses expositions</a>
             <span class="footer-link">|</span>
-            <a href="" class="footer-link">Contacts</a>
+            <a href="Palais_de_tokyo.html" class="footer-link">Accueil</a>
         </div>
-        <div class="footer-link">
+        <div class="footer-social">
             <a href=https://www.instagram.com/palaisdetokyo/><img src="images/Instagram_icon.png.webp" ></a>
             <a href=https://mobile.twitter.com/palaisdetokyo><img src="images/tweeter.png"></a>
             <a href=https://www.youtube.com/user/palaisdetokyo><img src="images/yutub.png"></a>
             <a href=https://www.facebook.com/palaisdetokyo/><img src="images/faceboock2.png"></a>
         </div>
     </footer>
+    <script src="js/carousel.js"></script>
     <script>
+        let fond = document.querySelector(".block-title");
+        fond.classList.add ("block-titre-fond-1");
+        setInterval(carousel_next, 2000);
     </script>
 </body>
 </html>
