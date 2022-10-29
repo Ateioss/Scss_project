@@ -5,10 +5,148 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="ses-expositions.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header class="block-logo"> 
+        <img src="images/Capture d’écran 2022-10-23 125228.png" alt="" class="logo">
+    </header>
+    <nav class="block-menu">
+        <a href="Son-histoire-palais-de-tokyo.html" class="item-menu">Son histoire</a>
+        <span>|</span>
+        <a href="Ses-expositions.html" class="item-menu">Ses expositions</a>
+        <span>|</span>
+        <a href="Palais_de_tokyo.html" class="item-menu">Acceuil</a>
+    </nav>
+    <main class="block-main">
+        <h3 class="title-main">
+            Programme du moment
+        </h3>
+        <div class="block-expositions">
+            <div class="block-exposition">
+                <img src="images/sheherazade_la_nuit.jpg" class="block-exposition-image" alt="">
+                <a href="javascript:void(0);" onclick="display('#sheherazade');" class="button-consulter">
+                    Consulter
+                </a>
+                <div id="sheherazade" class="bloc-exposition-info hidden-element label-info">
+                    <img src="images/sheherazade_la_nuit.jpg" width="100%" alt="">
+                    <h4>Shéhérazade la nuit</h4>
+                    <br>
+                    <p>Déployée dans les espaces du niveau 1 du Palais de Tokyo, l’exposition réunit des œuvres de six artistes : Minia Biabiany (née en 1988, Basse-Terre, Guadeloupe), Miguel Gomes (né en 1972, Lisbonne, Portugal), Ho Tzu Nyen (né en 1976, Singapour), Pedro Neves Marques (né en 1984, Lisbonne, Portugal), Lieko Shiga (née en 1980, Okazaki, Japon) et Ana Vaz (née en 1986, Brasilia, Brésil).
+
+                        Elle s’articule en un ensemble d’expositions monographiques qui se répondent et composent autant de chapitres poreux entre différents contextes géopolitiques : de l’Europe au Brésil, des Caraïbes au Japon et à l’Asie du Sud-Est. Elle s’accompagne par ailleurs d’une programmation culturelle, d’un cycle de projections et d’un numéro du magazine PALAIS #34 offrant un ancrage théorique et des perspectives littéraires à l’expérience sensible des œuvres.</p>
+                    <br>
+                    <p>Tarif plein 12euros, Tarif réduit 9euros, gratuit selon certaines conditions</p>
+                    <br>
+                    <p>Contact</p>
+                    <br>
+                    <a href="javascript:void(0);" onclick="close_info('#sheherazade');" class="button-close">Close</a>
+                </div>
+            </div>
+            <div class="block-exposition">
+                <img src="images/tupi_or_not_tupi.jpg" class="block-exposition-image" alt="">
+                <a href="javascript:void(0);" onclick="display('#tupi_or_not_tupi');" class="button-consulter">
+                    Consulter
+                </a>
+                <div id="tupi_or_not_tupi" class="bloc-exposition-info hidden-element label-info">
+                    <img src="images/tupi_or_not_tupi.jpg" width="100%" alt="">
+                    <h4>tupi or not tupi</h4>
+                    <br>
+                    <p>Lívia Melzi propose une enquête visuelle sur la représentation occidentale de capes Tupinambá, issues des tribus guerrières Tupi de la côte brésilienne et utilisées à l’origine pour des rituels anthropophages.</p>
+                    <br>
+                    <p>Tarif plein 12euros, Tarif réduit 9euros, gratuit selon certaines conditions</p>
+                    <br>
+                    <a href="javascript:void(0);" onclick="close_info('#tupi_or_not_tupi');" class="button-close">Close</a>
+                </div>
+            </div>
+            <div class="block-exposition">
+                <img src="images/parade.jpg" class="block-exposition-image" alt="">
+                <a href="javascript:void(0);" onclick="display('#parade');" class="button-consulter">
+                    Consulter
+                </a>
+                <div id="parade" class="bloc-exposition-info hidden-element label-info">
+                    <img src="images/parade.jpg" width="100%" alt="">
+                    <h4>Parade</h4>
+                    <br>
+                    <p>Parade est la première exposition à Paris de Guillaume Leblon depuis 10 ans. Elle est donc l’occasion d’une sorte de résumé de son travail sur une décennie, qui rassemble la diversité parfois déroutante de ses intérêts, de ses manières de faire, et des différents contextes qu’il a traversés, notamment depuis son installation à New York en 2015 et son expérience d’un atelier à Guadalajara au Mexique entre 2018 et 2022. </p>
+                    <br>
+                    <p>Tarif plein 12euros, Tarif réduit 9euros, gratuit selon certaines conditions</p>
+                    <br>
+                    <a href="javascript:void(0);" onclick="close_info('#parade');" class="button-close">Close</a>
+                </div>
+            </div>
+        </div>
+        <div class="block-expositions">
+            <div class="block-exposition">
+                <img src="images/difé.png" class="block-exposition-image" alt="">
+                <a href="javascript:void(0);" onclick="display('#dife');" class="button-consulter">
+                    Consulter
+                </a>
+                <div id="dife" class="bloc-exposition-info hidden-element label-info">
+                    <img src="images/difé.png" width="100%" alt="">
+                    <h4>difé</h4>
+                    <br>
+                    <p>Description de l'expo</p>
+                    <br>
+                    <p>Tarif plein 12euros, Tarif réduit 9euros, gratuit selon certaines conditions</p>
+                    <br>
+                    <p>Contact</p>
+                    <br>
+                    <a href="javascript:void(0);" onclick="close_info('#dife');" class="button-close">Close</a>
+                </div>
+            </div>
+            <div class="block-exposition">
+                <img src="images/humpty_dumpty.jpg" class="block-exposition-image" alt="">
+                <a href="javascript:void(0);" onclick="display('#humpty_dumpty');" class="button-consulter">
+                    Consulter
+                </a>
+                <div id="humpty_dumpty" class="bloc-exposition-info-2 hidden-element label-info">
+                    <img src="images/humpty_dumpty.jpg" alt="" width="100%" >
+                    <h4>humpty dumpty</h4>
+                    <br>
+                    <p>Au Palais de Tokyo, HUMPTY, le premier chapitre de l’exposition, rassemble une sélection d’œuvres inédites ou encore jamais présentées en France, ainsi que celles d’artistes invité·es. C’est au travers de la relation entre le corps et l’architecture, les territoires délaissés, les évocations de la guerre ou encore les espèces invasives, que Cyprien Gaillard fait un portrait de notre lien à l’effondrement et à la reconstruction. En creux se raconte l’obsession de la préservation des êtres et de la conservation des choses, et la tentation permanente de maintenir ou de retrouver un certain ordre du monde.
+
+                        À Lafayette Anticipations, pour le second chapitre de l’exposition, DUMPTY, l’artiste redonne vie à une œuvre tombée dans l’oubli. Sculpture monumentale installée depuis 1979 au cœur de Paris dans le quartier de l’Horloge, alors en pleine construction, cet automate, une horloge unique au monde, est constituée d’un homme juché sur un rocher muni d’un glaive et d’un bouclier. Les derniers mouvements de l’automate ont eu lieu en 2003, il est resté paralysé depuis, abandonné progressivement à une colonie de pigeons et à l’érosion. Cyprien Gaillard propose d’œuvrer à sa renaissance. Reprennent ainsi les mouvements de cette bataille permanente contre le temps, qu’il tente de rattraper.</p>
+                    <br>
+                    <p>Tarif plein 12euros, Tarif réduit 9euros, gratuit selon certaines conditions</p>
+                    <br>
+                    <a href="javascript:void(0);" onclick="close_info('#humpty_dumpty');" class="button-close">Close</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="block-footer">
+        <div>
+            <a href="" class="footer-link">Son histoire</a>
+            <span class="footer-link">|</span>
+            <a href="" class="footer-link">Ses expositions</a>
+            <span class="footer-link">|</span>
+            <a href="" class="footer-link">Contacts</a>
+        </div>
+        <div class="footer-social">
+            <a href=https://www.instagram.com/palaisdetokyo/><img src="images/Instagram_icon.png.webp" ></a>
+            <a href=https://mobile.twitter.com/palaisdetokyo><img src="images/tweeter.png"></a>
+            <a href=https://www.youtube.com/user/palaisdetokyo><img src="images/yutub.png"></a>
+            <a href=https://www.facebook.com/palaisdetokyo/><img src="images/faceboock2.png"></a>
+        </div>
+    </footer>
+    <script>
+        function display(id){
+            let listElements = document.querySelectorAll(".label-info");
+            for(let i=0;i<listElements.length;i++){
+                if(listElements[i].classList.contains("hidden-element")==false){
+                    listElements[i].classList.add("hidden-element");
+                }
+            }
+            let element = document.querySelector(id);
+            element.classList.remove("hidden-element");
+        }
+
+        function close_info(id){
+            let element = document.querySelector(id);
+            element.classList.add("hidden-element");
+        }
+    </script>
 </body>
 </html>

@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.hidden-element {
+  display: none;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  height: 100vh;
+}
+body .block-logo {
+  grid-area: 1/1/2/2;
+  height: 15vh;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+body .block-logo .logo {
+  max-width: 100%;
+}
+body .block-menu {
+  grid-area: 1/2/2/4;
+  height: 15vh;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+body .block-menu .item-menu {
+  text-decoration: none;
+}
+body .block-menu .item-menu:hover {
+  color: orangered;
+  font-size: large;
+}
+body .block-main {
+  grid-area: 2/1/3/4;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: rgb(228, 229, 230);
+  position: relative;
+}
+body .block-main .title-main {
+  text-align: left;
+  border-bottom: 2px black solid;
+}
+body .block-main .block-expositions {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: row;
+}
+body .block-main .block-expositions .block-exposition {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+  width: 33%;
+}
+body .block-main .block-expositions .block-exposition .block-exposition-image {
+  max-width: 50%;
+}
+body .block-main .block-expositions .block-exposition .block-exposition-image:hover {
+  max-width: 50%;
+  cursor: pointer;
+}
+body .block-main .block-expositions .block-exposition .button-consulter {
+  padding: 10px;
+  background-color: black;
+  opacity: 0.7;
+  display: block;
+  color: white;
+  width: "20px";
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+body .block-main .block-expositions .block-exposition .button-consulter:hover {
+  opacity: 0.5;
+}
+body .block-main .block-expositions .block-exposition .bloc-exposition-info {
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  border-radius: 5px;
+  border: 2px solid gray;
+  width: 30%;
+  padding: 10px;
+  background-color: white;
+  z-index: 15;
+}
+body .block-main .block-expositions .block-exposition .bloc-exposition-info .resize-img {
+  width: 50%;
+}
+body .block-main .block-expositions .block-exposition .bloc-exposition-info .button-close {
+  padding: 10px;
+  background-color: black;
+  opacity: 0.7;
+  display: block;
+  color: white;
+  width: "20px";
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+body .block-main .block-expositions .block-exposition .bloc-exposition-info .button-close:hover {
+  opacity: 0.5;
+}
+body .block-main .block-expositions .block-exposition .bloc-exposition-info-2 {
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  border-radius: 5px;
+  border: 2px solid gray;
+  width: 20%;
+  padding: 10px;
+  background-color: white;
+  z-index: 15;
+}
+body .block-main .block-expositions .block-exposition .bloc-exposition-info-2 .resize-img {
+  width: 50%;
+}
+body .block-main .block-expositions .block-exposition .bloc-exposition-info-2 .button-close {
+  padding: 10px;
+  background-color: black;
+  opacity: 0.7;
+  display: block;
+  color: white;
+  width: "20px";
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+body .block-main .block-expositions .block-exposition .bloc-exposition-info-2 .button-close:hover {
+  opacity: 0.5;
+}
+body .block-footer {
+  background-color: black;
+  grid-area: 3/1/4/4;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+}
+body .block-footer .footer-link {
+  text-decoration: none;
+  color: white;
+}
+body .block-footer .footer-link:hover {
+  color: aqua;
+}
+body .block-footer > .footer-social {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 3vh;
+}
+body .block-footer > .footer-social > a img {
+  width: 30px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 590px) {
+  body .block-logo {
+    grid-area: 1/1/2/4;
+  }
+  body .block-menu {
+    grid-area: 2/1/3/4;
+  }
+  body .block-main {
+    grid-area: 3/1/4/4;
+  }
+  body .block-main .title-main {
+    width: 100%;
+  }
+  body .block-main .block-expositions {
+    flex-direction: column;
+    gap: 5vh;
+  }
+  body .block-main .block-expositions .block-exposition {
+    width: 100%;
+  }
+  body .block-main .block-expositions .block-exposition .block-exposition-image {
+    max-width: 100%;
+  }
+  body .block-main .block-expositions .block-exposition .block-exposition-image:hover {
+    max-width: 100%;
+    cursor: pointer;
+  }
+  body .block-main .block-expositions .block-exposition .bloc-exposition-info {
+    width: 97%;
+    left: 2%;
+  }
+  body .block-main .block-expositions .block-exposition .bloc-exposition-info-2 {
+    width: 97%;
+    left: 2%;
+  }
+  body .block-footer {
+    grid-area: 4/1/5/4;
+  }
+}
+
+/*# sourceMappingURL=Ses-expositions.css.map */
