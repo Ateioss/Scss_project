@@ -39,8 +39,7 @@
                     <br>
                     <p>Tarif plein 12euros, Tarif réduit 9euros, gratuit selon certaines conditions</p>
                     <br>
-                    <p>Contact</p>
-                    <br>
+                    
                     <a href="javascript:void(0);" onclick="close_info('#sheherazade');" class="button-close">Close</a>
                 </div>
             </div>
@@ -87,12 +86,11 @@
                     <img src="images/difé.png" width="100%" alt="">
                     <h4>difé</h4>
                     <br>
-                    <p>Description de l'expo</p>
+                    <p>Intitulée difé, « feu » en créole, son exposition personnelle au Palais de Tokyo se poursuit avec l’installation nuit dans l’exposition collective Shéhérazade, la nuit. Matières naturelles, transformées ou fabriquées, réalités et fictions, figures et métaphores, s’entremêlent et ponctuent les espaces. Elles orientent autant qu’elles contraignent la circulation et le regard, imposant aux corps une certaine lenteur.</p>
                     <br>
                     <p>Tarif plein 12euros, Tarif réduit 9euros, gratuit selon certaines conditions</p>
                     <br>
-                    <p>Contact</p>
-                    <br>
+                    
                     <a href="javascript:void(0);" onclick="close_info('#dife');" class="button-close">Close</a>
                 </div>
             </div>
@@ -131,22 +129,6 @@
             <a href=https://www.facebook.com/palaisdetokyo/><img src="images/faceboock2.png"></a>
         </div>
     </footer>
-    <script>
-        function display(id){
-            let listElements = document.querySelectorAll(".label-info");
-            for(let i=0;i<listElements.length;i++){
-                if(listElements[i].classList.contains("hidden-element")==false){
-                    listElements[i].classList.add("hidden-element");
-                }
-            }
-            let element = document.querySelector(id);
-            element.classList.remove("hidden-element");
-        }
-
-        function close_info(id){
-            let element = document.querySelector(id);
-            element.classList.add("hidden-element");
-        }
-    </script>
+    <script src="tokyo.js"></script>
 </body>
 </html>

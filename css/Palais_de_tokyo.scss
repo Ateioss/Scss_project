@@ -1,0 +1,245 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-size: large;
+}
+
+@mixin center-element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+}
+
+/* carroucel */
+.block-titre-fond-1{
+    background-image: url(./../images/Copie-de-Design-sans-titre-2020-10-19T000904.662.jpg);
+}
+ 
+.block-titre-fond-2{
+    background-image: url(./../images/difé.png);
+}
+ 
+.block-titre-fond-3{
+    background-image: url(./../images/PALAIS_TOKYO_07_2014_HD-7.jpg);
+}
+
+.bloc-slide-inc{
+    display :flex;
+    gap : 10px;
+    padding : 10px;
+    border-radius : 40px;
+    position : absolute;
+    bottom : 10px;
+    left : 40%;
+    width: 20%;
+    /*border : 1px blue solid;*/
+    justify-content:center;
+}
+  
+.puce-blanc{
+    background-color:white;
+    width:15px;
+    height : 15px;
+    border-radius : 50%;
+}
+  
+.puce-orange{
+    background-color:orange;
+    width:15px;
+    height : 15px;
+    border-radius : 50%;
+}
+  
+.prev {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 25px;
+    border-color: transparent orange transparent transparent;
+    position : absolute;
+    top : 50%;
+    left : 10px;
+    &:hover{
+        cursor : pointer;
+        border-color: transparent blue transparent transparent;
+    }    
+}
+  
+.next {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 25px;
+    border-color: transparent transparent transparent orange;
+    position : absolute;
+    top : 50%;
+    right : 10px;
+    &:hover{
+        cursor : pointer;
+        border-color: transparent transparent transparent blue;
+    }
+}
+  
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    position: relative;
+    .block-logo{
+        grid-area: 1/1/2/2;
+        height: 20vh;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background-color: white;
+        @include center-element;
+        .logo{
+            max-width: 100%;
+        }
+    }
+
+    .block-menu{
+        grid-area: 1/2/2/4;
+        height: 20vh;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background-color: white;
+        @include center-element;
+        .item-menu {
+            text-decoration:none;
+            &:hover{
+                color:orangered;
+            }
+        }
+    }
+
+    .block-title{
+        background-color: white;
+        grid-area: 2/1/3/4;
+        height: 60vh;
+        /*background-image: url(./../images/Copie-de-Design-sans-titre-2020-10-19T000904.662.jpg);*/
+        background-size: cover;
+        position: relative;
+        .button-histoire{
+            position: absolute;
+            bottom: 80px;
+            right: 120px;
+            padding-top:  10px;
+            padding-bottom: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+            border-radius: 20px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            opacity: 0.6;
+            &:hover{
+                background-color: black;
+                color: white;
+                opacity: 1;
+            }
+        }
+    }
+
+    .block-main{
+        background-color: white;
+        grid-area: 3/1/4/4;
+        height: 60vh; 
+        padding:10px;
+        display: flex;
+        flex-direction: row;
+        .block-localisation{
+            width: 40%;
+            @include center-element;
+            flex-direction: column;
+            .palais-tokyo-adress{
+                margin-top: 3vh;
+                text-align: center;
+                
+            }
+            .palais-tokyo-social{
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                margin-top: 3vh;
+                &>a img{
+                    width:30px;
+                    border-radius:50%;
+                }           
+            }
+            &>h3{
+                font-size: 1.5em;
+            }
+        }
+        .block-main-map{
+            width: 60%;
+            @include center-element;
+            .map{
+                width:70%; 
+                height:70%;
+                border:0;
+            }
+        }
+    }
+
+    .block-footer{
+        background-color: black;
+        grid-area: 4/1/5/4;
+        height: 20vh;
+        @include center-element; 
+        flex-direction: column; 
+        .footer-link{
+            text-decoration: none;
+            color: white;
+            &:hover{
+                color: aqua;
+            }
+        }
+        &>.footer-social{
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 3vh;
+            &>a img{
+                width:30px;
+                border-radius:50%;
+            }           
+        }
+    }  
+}
+@media screen and (max-width: 590px){
+    body .block-logo{
+        grid-area: 1/1/2/4;
+        
+    }
+    body .block-menu{
+       grid-area: 2/1/3/4 
+    }
+    body .block-title{
+        grid-area:3/1/4/4  ;
+    }
+    body .block-main {
+        grid-area: 4/1/5/4;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .block-main-map{
+            margin-top: 20px;
+            width:100%;
+            .map{
+                width:100%; 
+                height:100%;
+                border:0;
+            }
+        }
+        .block-localisation{
+            width:100%;
+        }
+    }
+    body .block-footer {
+        grid-area: 5/1/6/4;
+    }
+} 
